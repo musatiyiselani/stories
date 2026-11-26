@@ -1,25 +1,27 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* =========================================
+   TERRENCE SMITH
+   Warm Parchment & Brown Theme
+========================================= */
 
 :root {
     --cream: #f3ead8;
-    --paper: #e9ddc6;
     --brown: #493729;
     --brown-dark: #2c2119;
     --gold: #a77a3e;
     --muted: #796b5a;
     --ink: #33291f;
+    --ink-soft: #624a32;
+    --ink-letter: #594633;
+    --accent-strong: #765126;
+    --accent-emphasis: #8a5c25;
+    --accent-special: #79562e;
 }
 
 body {
     min-height: 100vh;
     padding: 35px 20px;
-    background:
-        linear-gradient(135deg, #d4c4a9, #b6a185);
+    background-color: #b6a185;
+    background-image: linear-gradient(135deg, #d4c4a9, #b6a185);
     color: var(--ink);
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.95;
@@ -42,12 +44,6 @@ h1 {
     margin-bottom: 18px;
 }
 
-h2 {
-    color: var(--brown);
-    font-size: 1.45rem;
-    margin: 40px 0 18px;
-}
-
 .subtitle {
     color: var(--muted);
     text-align: center;
@@ -63,27 +59,27 @@ p {
 }
 
 strong {
-    color: #765126;
+    color: var(--accent-strong);
 }
 
 .dialogue {
-    color: #624a32;
+    color: var(--ink-soft);
     font-style: italic;
     margin-left: 15px;
 }
 
 .thought {
-    color: #796b5a;
+    color: var(--muted);
     font-style: italic;
 }
 
 .emphasis {
-    color: #8a5c25;
+    color: var(--accent-emphasis);
     font-weight: bold;
 }
 
 .special-line {
-    color: #79562e;
+    color: var(--accent-special);
     text-align: center;
     font-size: 1.15rem;
     font-style: italic;
@@ -104,33 +100,30 @@ strong {
     border-left: 3px solid var(--gold);
     padding: 25px;
     margin: 35px 0;
-    color: #594633;
+    color: var(--ink-letter);
     font-style: italic;
 }
 
 .decorator {
-    text-align: center;
     color: var(--gold);
     font-size: 1.4rem;
-    letter-spacing: 8px;
-    margin: 40px 0;
 }
 
-.home-return {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 10px 18px;
+/* Back to Stories button */
+.home-return a {
     color: var(--brown);
     border: 1px solid rgba(167, 122, 62, 0.55);
-    text-decoration: none;
-    transition: all 0.3s ease;
+    border-radius: 0;
+    padding: 10px 18px;
 }
 
-.home-return:hover {
+.home-return a:hover,
+.home-return a:focus-visible {
     background: var(--brown);
     color: var(--cream);
 }
 
+/* Mobile layout */
 @media (max-width: 768px) {
     body {
         padding: 12px;
@@ -138,7 +131,6 @@ strong {
 
     .container {
         padding: 28px 20px;
-        margin: 12px auto;
     }
 
     p {
@@ -151,6 +143,7 @@ strong {
     }
 }
 
+/* Print */
 @media print {
     body {
         background: white;
@@ -163,11 +156,10 @@ strong {
         border: none;
     }
 
-    h1, h2, p, strong {
+    h1,
+    h2,
+    p,
+    strong {
         color: black;
-    }
-
-    .home-return {
-        display: none;
     }
 }
