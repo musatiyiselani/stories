@@ -109,18 +109,14 @@ strong {
     font-size: 1.4rem;
 }
 
-/* Back to Stories button */
+/* Back to Stories link */
 .home-return a {
     color: var(--brown);
-    border: 1px solid rgba(167, 122, 62, 0.55);
-    border-radius: 0;
-    padding: 10px 18px;
 }
 
 .home-return a:hover,
 .home-return a:focus-visible {
-    background: var(--brown);
-    color: var(--cream);
+    color: var(--brown-dark);
 }
 
 /* Mobile layout */

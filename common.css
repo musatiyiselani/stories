@@ -66,6 +66,7 @@ a:focus-visible {
 .decorator {
     text-align: center;
     letter-spacing: 8px;
+    padding-left: 8px; /* balances the trailing letter-spacing so the symbols sit dead centre */
     margin: 35px 0;
     user-select: none;
 }
@@ -78,14 +79,21 @@ a:focus-visible {
 }
 
 .home-return a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 11px 22px;
-    border-radius: 6px;
+    display: inline-block;
+    padding-bottom: 2px;
     font-size: 0.95rem;
+    letter-spacing: 0.5px;
     text-decoration: none;
-    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease, color 0.3s ease;
+}
+
+.home-return a:hover,
+.home-return a:focus-visible {
+    background-size: 100% 1px;
 }
 
 /* Shared footer */

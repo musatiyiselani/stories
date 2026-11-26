@@ -117,18 +117,14 @@ strong {
     font-size: 1.5rem;
 }
 
-/* Back to Stories button */
+/* Back to Stories link */
 .home-return a {
-    background: var(--button);
     color: var(--gold-pale);
-    border: 1px solid var(--gold-line);
-    font-family: inherit;
 }
 
 .home-return a:hover,
 .home-return a:focus-visible {
-    background: var(--gold);
-    color: var(--night);
+    color: var(--gold);
 }
 
 /* Mobile layout */
