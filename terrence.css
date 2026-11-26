@@ -109,17 +109,12 @@ strong {
     font-size: 1.4rem;
 }
 
-/* Closing message */
-.closing-thought {
-    color: var(--brown);
+.inspired-by {
+    color: var(--muted);
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-style: italic;
-    line-height: 1.9;
-    margin: 50px auto 0;
-    max-width: 600px;
-    padding-top: 30px;
-    border-top: 1px solid rgba(167, 122, 62, 0.35);
+    margin-top: 12px;
 }
 
 /* Mobile layout */
