@@ -109,16 +109,6 @@ strong {
     font-size: 1.4rem;
 }
 
-/* Back to Stories link */
-.home-return a {
-    color: var(--brown);
-}
-
-.home-return a:hover,
-.home-return a:focus-visible {
-    color: var(--brown-dark);
-}
-
 /* Mobile layout */
 @media (max-width: 768px) {
     body {

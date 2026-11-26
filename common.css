@@ -71,31 +71,6 @@ a:focus-visible {
     user-select: none;
 }
 
-/* Shared back-to-home link: the wrapper centres the link, each theme styles the link */
-.home-return {
-    margin-top: 35px;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.home-return a {
-    display: inline-block;
-    padding-bottom: 2px;
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-size: 0 1px;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s ease, color 0.3s ease;
-}
-
-.home-return a:hover,
-.home-return a:focus-visible {
-    background-size: 100% 1px;
-}
-
 /* Shared footer */
 footer {
     text-align: center;
@@ -131,7 +106,6 @@ footer {
         color: black !important;
     }
 
-    .home-return,
     .decorator {
         display: none;
     }

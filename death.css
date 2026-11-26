@@ -117,16 +117,6 @@ strong {
     font-size: 1.5rem;
 }
 
-/* Back to Stories link */
-.home-return a {
-    color: var(--gold-pale);
-}
-
-.home-return a:hover,
-.home-return a:focus-visible {
-    color: var(--gold);
-}
-
 /* Mobile layout */
 @media (max-width: 768px) {
     body {
