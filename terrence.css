@@ -109,6 +109,19 @@ strong {
     font-size: 1.4rem;
 }
 
+/* Closing message */
+.closing-thought {
+    color: var(--brown);
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.9;
+    margin: 50px auto 0;
+    max-width: 600px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(167, 122, 62, 0.35);
+}
+
 /* Mobile layout */
 @media (max-width: 768px) {
     body {
